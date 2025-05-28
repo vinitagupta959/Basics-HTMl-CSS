@@ -1,0 +1,194 @@
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #045eb8, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+main {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+#searchContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#searchbtn {
+    padding: 12px;
+    width: 65%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#searchbtn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#searchIcon {
+    padding: 12px 20px;
+    border: none;
+    background-color: #4b6cb7;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#searchIcon:hover {
+    background-color: #3b5998;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.StutsText {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Spinner styling */
+#spinner {
+    width: 30px;
+    height: 30px;
+    border: 4px solid #ccc;
+    border-top: 4px solid #4b6cb7;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    animation: spin 1s linear infinite;
+}
+
+ 
+.status-container i {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+ 
+.status-container i,
+.status-container .spinner {
+    display: none; 
+}
+
+ 
+.status-container.loading .spinner {
+    display: block;  
+}
+.status-container.loading i {
+    display: none;  
+}
+
+ 
+.status-container.error i {
+    display: block;  
+}
+.status-container.error .spinner {
+    display: none; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+ #movieContainer {
+    width: 100%;
+    height: 400px;           
+    overflow-y: auto;        
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+ .movieCard {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 16px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movieCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.movieCard img {
+  width: 150px;
+  height: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.movieCard .des {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.movieCard .title {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.movieCard .releaseDate {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .movieCard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .movieCard img {
+    width: 60%;
+    height: auto;
+  }
+
+  .movieCard .des {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+ 
