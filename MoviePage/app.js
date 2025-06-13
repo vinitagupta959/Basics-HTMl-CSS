@@ -31,8 +31,10 @@ async function displayMovie(movieName){
     statusText.textContent = "Loading...";
    const response = await fetch(`https://www.omdbapi.com/?s=${movieName}&apikey=${apiKey}`);
 
-
+ 
     const data=await response.json();
+    console.log(data);
+    
     if  (data.Response==="False"){
         statusContainer.classList.remove("loading")
         statusContainer.classList.add(error)
@@ -50,6 +52,9 @@ async function displayMovie(movieName){
                     <h3 id="movieName">Movie Name: <span class="title">${movies[i].Title}</span></h3>
                     <p class="releaseDate">Released: <span id="release">${movies[i].Year}</span></p>
                 </div>
+
+
+                
             </div>`
     }
 
