@@ -1,0 +1,120 @@
+ * {
+     padding: 0;
+     margin: 0;
+ }
+
+ body {
+   min-height: 100vh;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: hsl(30, 54%, 90%);
+     /* Stone 100 */
+     font-family: 'Outfit', sans-serif;
+     color: hsl(30, 10%, 34%);
+     /* Stone 600 */
+      -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+ }
+
+ #main {
+  width: 500px;
+  padding: 20px;
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+#head {
+  font-family: 'Young Serif', serif;
+  font-weight: 800;
+  color: #131212;
+}
+#des {
+    color: hsl(30, 10%, 34%);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+ img {
+     width: 100%;
+     border-radius: 10px;
+ }
+ .prep-box {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.prep-box h3 {
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 10px;
+}
+
+.prep-box li {
+    color: hsl(30, 10%, 34%);
+    margin-left: 20px;
+    line-height: 1.5;
+}
+  #ingredients, #Instructions, #Nutrition {
+  color: hsl(14, 45%, 36%); /* Brown 800 */
+  margin-bottom: 15px;
+}
+#ingredientsUl{
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+hr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ .ingredientList {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+    color: hsl(30, 10%, 34%);
+}
+ #InstructionsOl{
+margin-left: 25px;
+ }
+ ol li::marker {
+  color: hsl(332, 51%, 32%); /* Rose 800 */
+  font-weight: bold;
+}
+
+ol li {
+  padding-left: 8px; /* Adds space between number and text */
+  margin-bottom: 8px; /* Optional: adds vertical spacing */
+  line-height: 1.5;
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+ td:first-child {
+  color: hsl(30, 10%, 34%); /* Stone 600 */
+}
+
+td:last-child {
+  color: hsl(332, 51%, 32%); /* Rose 800 */
+}
+
+
+@media (max-width: 600px) {
+  #main {
+    width: 90%;
+    padding: 20px;
+  }
+}
