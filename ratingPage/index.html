@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div id="ratingPage">
+            <div id="head">
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div id="container">
+                <h3>How did we do?</h3>
+                <p id="text">
+                    We value your feedback.<br>
+                    Please let us know how we did.
+                    Your opinion helps us improve!
+                </p>
+            </div>
+            <div id="buttons">
+                <button class="rating-btn" data-rating="1">1</button>
+                <button class="rating-btn" data-rating="2">2</button>
+                <button class="rating-btn" data-rating="3">3</button>
+                <button class="rating-btn" data-rating="4">4</button>
+                <button class="rating-btn" data-rating="5">5</button>
+            </div>
+            <!-- data-rating html 5 me aya  tha ye mainly rating system number  stre karne wothout  display isse js ko acces karne me easy oadta hai  -->
+            <button id="submitBtn">Submit</button>
+        </div>
+        <section id="thankyou" style="display: none;">
+            <img src="assets/image copy.png" alt="" id="tqImage">
+            <p id="rating">You selected 4 out of 5</p>
+            <h3 id="thankyou">Thank you!</h3>
+            <p id="meassage">We appreciate you taking the time to give a rating. <br>
+                If you ever need more support, don't hesitate to get in touch!</p>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

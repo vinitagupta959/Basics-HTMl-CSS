@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #050002, #1d2b64);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background: linear-gradient(to right, #965858, #6b5252);
+  height: auto;
+  width: 500px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px #0e0d0d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#ratingPage {
+  background: linear-gradient(to right, #d17373, #1d2b64);
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Head Styling */
+#head {
+  padding: 6px;
+  margin-bottom: 10px;
+}
+
+#head i {
+  color: rgb(29, 28, 28);
+  border-radius: 50%;
+  border: 2px solid #776d6d;
+  padding: 10px;
+  background-color: #eba8a8;
+}
+
+/* Text and Title Styling */
+#container {
+  margin-bottom: 20px;
+}
+
+#container h3 {
+  color: #f0f3f3;
+  font-size: 30px;
+  margin: 5px;
+}
+
+#container p {
+  font-size: 16px;
+  color: #f0f3f3;
+  font-weight: 400;
+  margin: 10px 5px;
+  
+}
+
+ 
+#buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.rating-btn {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: black;
+  color: aliceblue;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rating-btn:hover {
+  background-color: #d46828;
+  transform: scale(1.1);
+}
+
+/* Submit Button Styling */
+#submitBtn {
+  background-color: rgb(221, 99, 17);
+  width: 100%;
+  border-radius: 20px;
+  font-size: 24px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover {
+  background-color: #b97014;
+}
+/* Thank you Section Styling */
+#thankyou {
+  display: none;  /* Initially hidden, will be shown dynamically after rating */
+  background-color: #dbb2b2;
+  width: 90%;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-shadow: 4px 8px 5px 5px #0e0d0d; 
+}
+
+ 
+#tqImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;   
+  margin-bottom: 20px;
+  object-fit: cover;   
+}
+
+ 
+#rating {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+ 
+#thankyou {
+  font-size: 28px;
+  color: #4CAF50;  
+  margin-bottom: 20px;
+}
+
+ 
+#meassage {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+ 
+@media screen and (max-width: 600px) {
+  #thankyou {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #rating {
+    font-size: 18px;
+  }
+
+  #thankyou {
+    font-size: 24px;
+  }
+
+  #meassage {
+    font-size: 14px;
+  }
+
+  #tqImage {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 80%;
+    height: auto;
+  }
+
+  #container h3 {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  #submitBtn {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 90%;
+    height: auto;
+  }
+
+  #container h3 {
+    font-size: 18px;
+  }
+
+  #buttons {
+    width: 90%;
+  justify-content: space-between;
+    margin: 10px;
+   
+  }
+
+  button {
+    margin-bottom: 10px;
+    width: 20%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #submitBtn {
+    font-size: 18px;
+    padding: 12px;
+  }
+}
